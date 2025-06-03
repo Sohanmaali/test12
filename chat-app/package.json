@@ -1,0 +1,17 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "A real-time chat application with Next.js, NestJS, and Socket.IO",
+  "scripts": {
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run start:dev",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "build": "npm run build:client && npm run build:server",
+    "start": "cd server && npm run start:prod"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
